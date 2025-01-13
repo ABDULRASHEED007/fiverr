@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+  
+    ol {
+      display: inline-flex;
+      align-items: center;
+  
+      > li {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 0.25rem;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+  
+        @media (min-width: 768px) {
+          margin-right: 0.75rem;
+        }
+  
+        a,
+        span {
+          display: inline-flex;
+          align-items: center;
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: #2d3748;
+          margin-left: 0.25rem;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+  
+          @media (min-width: 768px) {
+            margin-left: 0.5rem;
+          }
+        }
+  
+        svg {
+          margin-right: 1rem;
+          height: 1rem;
+          width: 1rem;
+        }
+      }
+    }
+  }
+  

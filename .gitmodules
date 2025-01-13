@@ -1,0 +1,3 @@
+[submodule "fiverr"]
+	path = fiverr
+	url = https://github.com/ABDULRASHEED007/fiverr.git
