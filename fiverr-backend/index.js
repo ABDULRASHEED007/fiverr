@@ -47,7 +47,9 @@ app.use("/api/messages", messageRoute)
 app.use("/api/reviews", reviewRoute)
 
 
-
+app.get("/", () => {
+    console.log("hello world")
+})
 app.listen(8800, () => {
     console.log("Server running")
 })
