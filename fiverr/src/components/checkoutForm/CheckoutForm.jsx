@@ -57,15 +57,17 @@ const CheckoutForm = () => {
         }
     
         setIsLoading(true);
-        const return_url = `${process.env.REACT_APP_FRONT_END_URL}/success`
+
+        // const return_url = `${process.env.REACT_APP_FRONT_END_URL}/success`
     
         const { error } = await stripe.confirmPayment({
           elements,
           confirmParams: {
             // Make sure to change this to your payment completion page
-            return_url: return_url,
-            // return_url: `http://localhost:3000/success`,
+            // return_url: return_url,
+            return_url: `http://localhost:3000/success`,
           },
+          
         });
     
         if (error.type === "card_error" || error.type === "validation_error") {
